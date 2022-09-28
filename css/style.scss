@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+ $brand: #F1E4E6;
+ $header: #222224;
+ $category: #F8F3F4;
+ $fashion: #F16D7F;
+
+@mixin font($weight: 400, $height, $size) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+ }
+*
+ {
+    font-family: 'Lato';
+    font-style: normal;
+ }
+ .wrapper
+ {
+    margin-left: 230px;
+    margin-right: 230px;
+ }
+header
+{
+    background-color: $header;
+    
+}
+.header__container {
+    
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__item {
+    display: flex;
+    height: 100%;
+}
+.find {
+    border:none;
+    background-color: $header;
+    margin-left: 41px;
+}
+.find:active
+{
+    background-color: red;
+    border-radius: 10px;
+}
+.brand__container {
+    height: 760px;
+    background-color: $brand;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand__img {
+    width: 800px; 
+    height: 765px;
+}
+.brand__text
+{
+    @include font(900, 53px, 44px);
+    width: 405px; 
+    height: 95px;
+    margin-right: 330px;
+    position: relative;
+}
+.brand__text-text {
+    @include font(400, 13px, 16px);
+    color: #000000;
+}
+.brand__text h1
+{
+    @include font(900, 53px, 44px);
+}
+.brand__text p{
+    @include font(700, 29px, 24px);
+}
+.brand__text span
+{
+    color: $fashion;
+}
+.brand__text::before
+{
+    content: " ";
+    background-color: $fashion;
+    height: 92px;
+    width: 12px;
+    position: absolute;
+    left: -32px;
+}
+
+.offer__container {
+}
+.offer__item {
+}
+.offer__main {
+}
+.product {
+}
+.product__container {
+}
+.product__item {
+}
+.product__text {
+}
+.product__button {
+}
+.feature__container {
+}
+.feature__item {
+}
+.subscribe__container {
+}
+.subscribe__item {
+}
+.subscripe__button {
+}
+.contact_container {
+}
+.contact__item {
+}
+
+@media(max-width: 1100px) and (min-width: 450px)
+{
+    .wrapper
+    {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .header__container
+    {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .brand__img img
+    {
+
+    }
+}
