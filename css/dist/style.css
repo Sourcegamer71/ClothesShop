@@ -11,84 +11,46 @@
 
 header {
   background-color: #222224;
+  height: 75px;
 }
 
 .header__container {
-  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .header__item {
   display: flex;
-  height: 100%;
-}
-
-.find {
-  border: none;
-  background-color: #222224;
-  margin-left: 41px;
-}
-
-.find:active {
-  background-color: red;
-  border-radius: 10px;
-}
-
-.brand__container {
-  height: 760px;
-  background-color: #F1E4E6;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.brand__img {
-  width: 800px;
-  height: 765px;
+.header__item button {
+  border: 1px solid #222224;
+  border-radius: 10px;
+  width: 49px;
+  height: 49px;
+  background-color: #222224;
 }
 
-.brand__text {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 53px;
-  width: 405px;
-  height: 95px;
-  margin-right: 330px;
-  position: relative;
-}
-
-.brand__text-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 13px;
-  color: #000000;
-}
-
-.brand__text h1 {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 53px;
-}
-
-.brand__text p {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-}
-
-.brand__text span {
-  color: #F16D7F;
-}
-
-.brand__text::before {
-  content: " ";
+.header__item button:active, .header__item a:active {
   background-color: #F16D7F;
-  height: 92px;
-  width: 12px;
-  position: absolute;
-  left: -32px;
+  opacity: 40%;
+}
+
+.header__item button:hover, .header__item a:hover {
+  background-color: #F16D7F;
+  cursor: pointer;
+}
+
+.subscribe__container {
+  background-image: url(../images1/footer.png);
+  min-height: 448px;
+  width: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1100px) and (min-width: 450px) {
@@ -100,5 +62,15 @@ header {
   .header__container {
     margin-left: 32px;
     margin-right: 32px;
+  }
+}
+@media (max-width: 449px) {
+  .wrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .header__item-image-profile, .header__item-image-market {
+    display: none;
   }
 }

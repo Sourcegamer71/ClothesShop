@@ -19,106 +19,57 @@
     margin-left: 230px;
     margin-right: 230px;
  }
-header
-{
+ header
+ {
     background-color: $header;
-    
-}
-.header__container {
-    
     height: 75px;
+ }
+ .header__container
+ {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header__item {
-    display: flex;
     height: 100%;
-}
-.find {
-    border:none;
-    background-color: $header;
-    margin-left: 41px;
-}
-.find:active
-{
-    background-color: red;
-    border-radius: 10px;
-}
-.brand__container {
-    height: 760px;
-    background-color: $brand;
+ }
+ .header__item
+ {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.brand__img {
-    width: 800px; 
-    height: 765px;
-}
-.brand__text
-{
-    @include font(900, 53px, 44px);
-    width: 405px; 
-    height: 95px;
-    margin-right: 330px;
-    position: relative;
-}
-.brand__text-text {
-    @include font(400, 13px, 16px);
-    color: #000000;
-}
-.brand__text h1
-{
-    @include font(900, 53px, 44px);
-}
-.brand__text p{
-    @include font(700, 29px, 24px);
-}
-.brand__text span
-{
-    color: $fashion;
-}
-.brand__text::before
-{
-    content: " ";
+    align-items: center;
+ }
+ .header__item button
+ {
+    border: 1px solid $header;
+    border-radius: 10px;
+    width: 49px;
+    height: 49px;
+    background-color: $header;
+ }
+ .header__item button:active, .header__item a:active  
+ {
     background-color: $fashion;
-    height: 92px;
-    width: 12px;
-    position: absolute;
-    left: -32px;
+    opacity: 40%;
+ }
+.header__item button:hover, .header__item a:hover
+{
+    background-color: $fashion;
+    cursor:pointer;
 }
 
-.offer__container {
+
+
+.subscribe__container
+{
+    background-image: url(../images1/footer.png);
+    min-height: 448px;
+    width: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.offer__item {
-}
-.offer__main {
-}
-.product {
-}
-.product__container {
-}
-.product__item {
-}
-.product__text {
-}
-.product__button {
-}
-.feature__container {
-}
-.feature__item {
-}
-.subscribe__container {
-}
-.subscribe__item {
-}
-.subscripe__button {
-}
-.contact_container {
-}
-.contact__item {
-}
+
+
+
+
 
 @media(max-width: 1100px) and (min-width: 450px)
 {
@@ -130,10 +81,18 @@ header
     .header__container
     {
         margin-left: 32px;
-        margin-right: 32px;
+        margin-right: 32px; 
     }
-    .brand__img img
+}
+@media(max-width: 449px)
+{
+    .wrapper
     {
-
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .header__item-image-profile, .header__item-image-market
+    {
+        display: none;
     }
 }
