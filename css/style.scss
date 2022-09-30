@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400italic,regular,italic,700,700italic,900,900italic);
  $brand: #F1E4E6;
  $header: #222224;
  $category: #F8F3F4;
@@ -56,19 +56,148 @@
     cursor:pointer;
 }
 
-
-
-.subscribe__container
+.subscribe
 {
-    background-image: url(../images1/footer.png);
-    min-height: 448px;
-    width: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-image: url(../images1/footer.png);
+  min-height: 448px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
-
-
-
+.subscribe__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe__img {
+  width: 360px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include font(400, 24px, 20px);
+}
+.subscribe__img img
+{
+    margin-bottom: 30px;
+}
+.subscribe__img i
+{
+    font-style: italic;
+}
+.subscribe__text {
+  width: 360px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__text h1
+{
+    @include font(700, 40px, 24px);
+}
+.subscribe__text p
+{
+    @include font(400, 30px, 18px);
+    margin-bottom: 32px;
+}
+.subscribe__button
+{
+    width: 356px;
+    height: 49px;
+    background: #E1E1E1;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe__button input
+{
+    border:none;
+    background: #E1E1E1;
+    margin-left: 22px;
+    @include font(400, 17px, 14px);
+    opacity: 0.67;
+    color: #222224;
+}
+.subscribe__button input:focus
+{
+    border: 2px solid #E1E1E1;
+    outline: 0;
+    outline-offset: 0;
+}
+.subscribe__button button
+{
+    background-color: $fashion;
+    height: 49px;
+    border-radius: 0 23px 23px 0;
+    border: none;
+    width: 100px;
+    color: #FFFFFF;
+    @include font(400, 17px, 14px);
+}
+.subscribe__button button:active 
+{
+    opacity: 50%;
+}
+.subscribe__button button:hover
+{
+    background-color: #F1E4E6;
+    color: $header;
+}
+.contact
+{
+    background-color: $header;
+    
+}
+.contact__container
+{   
+    min-height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FBFBFB;
+    @include font(400, 19px, 16px);
+}
+.contact__item
+{
+    display: flex;
+    justify-content: space-between;
+}
+.contact svg
+{
+    fill: #000000;
+}
+.contact svg:hover
+{
+    fill: #FFFFFF;
+}
+.soc
+{
+    width: 150px;
+    
+}
+.social
+{
+    height: 32px;
+    width: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social:hover
+{
+    background-color: $fashion;   
+}
+.social:hover svg
+{
+    fill: #FFFFFF;
+}
 
 
 @media(max-width: 1100px) and (min-width: 450px)
@@ -83,6 +212,25 @@
         margin-left: 32px;
         margin-right: 32px; 
     }
+    .subscribe
+    {
+        min-height: 693px;
+        background-position: center;
+        background-size: 150% 100%;
+    }
+    .subscribe__container
+    {
+        flex-direction: column;
+    }
+    .subscribe__img
+    {
+        margin-bottom: 48px;
+    }
+    .subscribe__text
+    {
+        margin-bottom: 140px;
+    }
+    
 }
 @media(max-width: 449px)
 {
@@ -94,5 +242,39 @@
     .header__item-image-profile, .header__item-image-market
     {
         display: none;
+    }
+    .subscribe
+    {
+        min-height: 550px;
+        background-size: 150% 100%;
+    }
+    .subscribe__container
+    {
+        flex-direction: column;
+    }
+    .subscribe__img, .subscribe__text
+    {
+        width: 340px;
+    }
+    .subscribe__text p
+    {
+        @include font(400, 29px, 14px);
+    }
+    .subscribe__text h1
+    {
+        @include font(700, 36px, 24px);
+    }
+    .contact__container
+    {
+        flex-direction: column-reverse;
+    }
+    .soc
+    {
+        margin-top: 43px;
+        margin-bottom: 40px;
+    }
+    .allrights
+    {
+        margin-bottom: 9px;
     }
 }

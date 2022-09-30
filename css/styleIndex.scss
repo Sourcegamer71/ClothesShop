@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import "style.scss";
+.brand__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $brand;
+}
+.brand__img img{
+    width: auto;
+    height: 765px; 
+}
+.brand__text {
+    margin-right: 330px;
+    width: 406px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    h1
+    {
+        @include font(900, 58px, 48px)
+    }
+    p
+    {
+        @include font(700, 38px, 32px)
+    }
+    span
+    {
+        color:$fashion;
+    }
+}
+.brand__text-line {
+    background-color: $fashion;
+    width: 12px;
+    margin-right: 16px;
+}
+
+.offer {
+    margin-top: 65px;
+    margin-bottom: 96px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.offer__container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.offer__item {
+    display: flex;
+    min-height: 240px;
+    width: 360px/1140px * 100%;
+    border: 1px solid red;
+    margin-right: 30px;
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.man
+    {
+        background-image: url(../images1/Offer1.png);
+    }
+    .woman
+    {
+        background-image: url(../images1/Offer2.png);
+    }
+    .kids
+    {
+        background-image: url(../images1/Offer3.png);
+        margin-right: 0px;
+    }
+.offer__main {
+    background-image: url(../images1/Offer4.jpg);
+    background-size: 100%;
+    min-height: 180px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid red;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+@media(max-width: 1100px) and (min-width: 450px)
+{   
+    .brand__img img
+    {
+        height: 368px;
+        width: auto;
+    }
+    .brand__text
+    {
+        margin-right: 34px;
+        width: 311px;
+    h1
+    {
+        @include font(900, 53px, 44px)
+    }
+    p
+    {
+        @include font(700, 28px, 24px)
+    }
+    }
+}
+@media(max-width: 449px)
+{
+    .brand__container
+    {
+        width: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    .brand__text
+    {
+        margin: 145px auto;
+        h1    
+            {
+                @include font(900, 46px, 38px)
+            }
+        p
+            {
+                @include font(700, 24px, 20px)
+            }
+    }
+    .brand__img img
+    {
+        display:none;
+    }  
+    .offer
+    {
+        align-items: center;
+    }
+    .offer__container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer__item
+    {
+        margin-bottom: 32px;
+        margin-right: 0px;
+        height: 250px;
+        width:345px;
+    }
+    .offer__main
+    {
+        height: 115px;
+        width: 345px;
+    }
+}

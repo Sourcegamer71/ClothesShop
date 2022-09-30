@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400italic,regular,italic,700,700italic,900,900italic);
 * {
   font-family: "Lato";
@@ -205,21 +206,26 @@ header {
     margin-left: 16px;
     margin-right: 16px;
   }
+
   .header__container {
     margin-left: 32px;
     margin-right: 32px;
   }
+
   .subscribe {
     min-height: 693px;
     background-position: center;
     background-size: 150% 100%;
   }
+
   .subscribe__container {
     flex-direction: column;
   }
+
   .subscribe__img {
     margin-bottom: 48px;
   }
+
   .subscribe__text {
     margin-bottom: 140px;
   }
@@ -229,37 +235,205 @@ header {
     margin-left: 16px;
     margin-right: 16px;
   }
+
   .header__item-image-profile, .header__item-image-market {
     display: none;
   }
+
   .subscribe {
     min-height: 550px;
     background-size: 150% 100%;
   }
+
   .subscribe__container {
     flex-direction: column;
   }
+
   .subscribe__img, .subscribe__text {
     width: 340px;
   }
+
   .subscribe__text p {
     font-size: 14px;
     font-weight: 400;
     line-height: 29px;
   }
+
   .subscribe__text h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
   }
+
   .contact__container {
     flex-direction: column-reverse;
   }
+
   .soc {
     margin-top: 43px;
     margin-bottom: 40px;
   }
+
   .allrights {
     margin-bottom: 9px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.brand__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1E4E6;
+}
+
+.brand__img img {
+  width: auto;
+  height: 765px;
+}
+
+.brand__text {
+  margin-right: 330px;
+  width: 406px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.brand__text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+}
+.brand__text p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.brand__text span {
+  color: #F16D7F;
+}
+
+.brand__text-line {
+  background-color: #F16D7F;
+  width: 12px;
+  margin-right: 16px;
+}
+
+.offer {
+  margin-top: 65px;
+  margin-bottom: 96px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+
+.offer__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.offer__item {
+  display: flex;
+  min-height: 240px;
+  width: 31.5789473684%;
+  border: 1px solid red;
+  margin-right: 30px;
+  background-size: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.man {
+  background-image: url(../images1/Offer1.png);
+}
+
+.woman {
+  background-image: url(../images1/Offer2.png);
+}
+
+.kids {
+  background-image: url(../images1/Offer3.png);
+  margin-right: 0px;
+}
+
+.offer__main {
+  background-image: url(../images1/Offer4.jpg);
+  background-size: 100%;
+  min-height: 180px;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid red;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1100px) and (min-width: 450px) {
+  .brand__img img {
+    height: 368px;
+    width: auto;
+  }
+
+  .brand__text {
+    margin-right: 34px;
+    width: 311px;
+  }
+  .brand__text h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 53px;
+  }
+  .brand__text p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+@media (max-width: 449px) {
+  .brand__container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand__text {
+    margin: 145px auto;
+  }
+  .brand__text h1 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 46px;
+  }
+  .brand__text p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .brand__img img {
+    display: none;
+  }
+
+  .offer {
+    align-items: center;
+  }
+
+  .offer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer__item {
+    margin-bottom: 32px;
+    margin-right: 0px;
+    height: 250px;
+    width: 345px;
+  }
+
+  .offer__main {
+    height: 115px;
+    width: 345px;
+  }
+}
