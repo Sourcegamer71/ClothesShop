@@ -91,15 +91,17 @@ $hover: wheat;
 
 .product {
     text-align: center;
-    margin-top:95px;
     margin-bottom:95px;
-    h1{
+}
+
+.product__p{
+        @include font(400, 17px, 14px);
+
+    }
+.product__h1{
+        margin-top:95px;
         @include font(400, 36px, 30px);
     }
-    p{
-        @include font(400, 17px, 14px);
-    }
-}
 .product__container {
     margin-top: 48px;
     display: grid;
@@ -129,6 +131,8 @@ $hover: wheat;
     {
         @include font(300, 17px, 14px);
         color: #5D5D5D;
+        margin-bottom: 18px;
+        padding-right: 25px;
     }
     h4
     {
@@ -218,7 +222,7 @@ $hover: wheat;
         grid-gap: 20px;
     }
     .product {
-        margin-top:150px;
+        margin-top:50px;
         margin-bottom:65px;
     }
     .product__button

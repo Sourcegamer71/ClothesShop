@@ -1,0 +1,80 @@
+@import "style.scss";
+@import "styleIndex.scss";
+@import "styleCatalog.scss";
+@import "zero.scss";
+
+.model {
+    height: 777px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#F7F7F7;;
+}
+
+.arrow {
+    height: 47px;
+    width: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    path
+    {
+        fill:black;
+    }
+}
+.arrow:hover
+{
+    background: #F7F7F7;
+    path
+    {
+        fill:$fashion;
+    }
+}
+.model__img img{
+    height: 724px;
+    width: auto;
+}
+
+.infoproduct {
+    height: 601px;
+    background-color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: -65px;
+}
+.wrapper {
+}
+.infoproduct__info {
+}
+.info_hr {
+}
+.infoproduct__buttons {
+}
+.cats {
+}
+.cats__filter {
+}
+.infoproduct__add {
+}
+
+
+@media(max-width: 1100px) and (min-width: 450px)
+{
+    .model
+    {
+        height: 624px;
+    }
+    .model__img img
+    {
+        height: 565px;
+    }
+}
+
+@media(max-width: 449px)
+{
+    .model__img img
+    {
+        height: 454px;
+    }
+}
