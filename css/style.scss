@@ -3,6 +3,7 @@
  $header: #222224;
  $category: #F8F3F4;
  $fashion: #F16D7F;
+ $hover: wheat;
 
 @mixin font($weight: 400, $height, $size) {
     font-size: $size;
@@ -80,6 +81,10 @@
   align-items: center;
   text-align: center;
   @include font(400, 24px, 20px);
+}
+.subscribe__img:hover img 
+{
+    filter: blur(50%);
 }
 .subscribe__img img
 {

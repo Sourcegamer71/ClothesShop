@@ -1,14 +1,11 @@
 @import "style.scss";
-@import "styleIndex.scss";
-@import "styleCatalog.scss";
-@import "zero.scss";
 
 .model {
     height: 777px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#F7F7F7;;
+    background-color:#F7F7F7;
 }
 
 .arrow {
@@ -37,26 +34,87 @@
 }
 
 .infoproduct {
-    height: 601px;
+    min-height: 601px;
     background-color: #FFFFFF;
     text-align: center;
     position: relative;
     top: -65px;
-}
-.wrapper {
+    border: 1px solid #EAEAEA;
 }
 .infoproduct__info {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    h5
+    {
+        @include font(300, 17px,14px);
+        color: $fashion;
+        margin-bottom: 12px;
+    }
+    h3
+    {
+        @include font(300, 22px,18px);
+        color: #4D4D4D;
+        margin-top: 12px;
+        margin-bottom: 48px;
+    }
+    p
+    {
+        @include font(300, 17px,14px);
+        margin: 48px 10px 33px 10px;
+        color: #5E5E5E;
+    }
+    h2
+    {
+        @include font(300, 29px,24px);
+        color: $fashion;
+    }
 }
 .info_hr {
+    width: 63px;
+    border: 3px solid $fashion;
+    background-color:$fashion;
+}
+.infoproduct__hr
+{
+    border: 1px solid #EAEAEA;
+    margin: 0 250px 65px 250px;
 }
 .infoproduct__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.cats {
-}
-.cats__filter {
-}
+
 .infoproduct__add {
+    margin-top: 49px;
+    margin-bottom: 65px;
+    border: 1px solid $fashion;
+    background-color: #fff;
+    height: 48px;
+    width: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font(400, 20px,16px);
+    color: $fashion;
+    img
+    {
+        margin-left: -23px;
+        margin-right: 23px;
+    }
+    &:hover
+    {
+        background-color: $hover;
+        color: $header;
+    }
+    &:active
+    {
+        background-color: $brand;
+        color: $header;
+    }
+    
 }
+
 
 
 @media(max-width: 1100px) and (min-width: 450px)
@@ -76,5 +134,17 @@
     .model__img img
     {
         height: 454px;
+    }
+    .info__cats
+    {
+        p
+        {
+            @include font(400, 12px,10px);
+        }
+        img
+        {
+            width: 10px;
+            height: 5px;
+        }
     }
 }

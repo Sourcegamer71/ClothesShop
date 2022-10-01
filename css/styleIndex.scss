@@ -1,7 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 @import "style.scss";
-$hover: wheat;
-
 .brand__container {
     display: flex;
     justify-content: space-between;
@@ -48,6 +45,10 @@ $hover: wheat;
 .offer img
 {
   width: 100%;
+}
+.offer_photos:hover .offer_photos img
+{
+    filter: blur(50%);
 }
 .offer_photos
 {
@@ -152,10 +153,12 @@ $hover: wheat;
     &:hover
     {
         background-color: $hover;
+        color: $header;
     }
     &:active
     {
         background-color: $brand;
+        color: $header;
     }
 }
 
