@@ -28,6 +28,11 @@
         color:$fashion;
     }
 }
+.brand__text:hover
+{
+    transition-duration: 1s;
+    transform: scale(1.4);
+}
 .brand__text-line {
     background-color: $fashion;
     width: 12px;
@@ -41,14 +46,19 @@
   display: flex;
   text-align: center;
   position: relative;
+  transition: transform 1s;
+}
+.offer_main:hover
+{
+    transform: scale(1.2);
 }
 .offer img
 {
   width: 100%;
 }
-.offer_photos:hover .offer_photos img
+.offer_item:hover 
 {
-    filter: blur(50%);
+    transform: scale(1.2);
 }
 .offer_photos
 {
@@ -62,6 +72,7 @@
   display: flex;
   height: auto;
   width: 100%;
+  transition: transform 1s;
 }
 .offer__text
 {
@@ -112,12 +123,37 @@
     grid-template-rows: 580px;
 }
 .product__item {
-    
+    position: relative;
     background-color: #F8F8F8;
     img{
         width: 360px;
         height: 420px;
     }
+}
+.product__item:hover 
+{
+    
+    transition-duration: 2s;
+    transform: scale(1.4);
+    z-index:2;
+    img
+    {
+        filter: blur(5px);
+    }   
+}
+.product__item:hover::before
+{
+    content: "Add to cart";
+    background-color: $brand;
+    color: $fashion;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid  $brand;
+    position: absolute;
+    top: 40%;
+    margin-left: 100px;
+    z-index: 2;  
 }
 .product__text {
     margin-top: 26px;
@@ -191,6 +227,15 @@
 .feature-gap
 {
     margin-right: 0px;
+}
+.feature__item:hover path
+{
+    fill:$hover;
+}
+.feature__item:hover svg
+{
+    transition-duration: 1s;
+    transform: scale(1.4);
 }
 
 
