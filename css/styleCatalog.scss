@@ -31,11 +31,25 @@
 .filter {
     display: flex;
     flex-grow: 1;
+    position: relative;
     img
     {
         width: 15px;
         height: 10px;
-        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    :hover::before
+    {
+        content: "in the works";
+        position: absolute;
+        top: 20px;
+        background-color: $category;
+        height: 200px;
+        width: 120px;
+        text-align: center;
+        z-index: 2;
+        @include font(400, 23px,19px);
     }
 }
 .cats {
@@ -51,6 +65,8 @@
 .cats__filter {
     display: flex;
     margin-right: 28px;
+    position: relative;
+    z-index: 3;
     p
     {
         margin-right: 10px;
@@ -59,8 +75,20 @@
     {
         margin-top: 5px;
     }
-    
+    :hover::before
+    {
+        content: "in the works";
+        position: absolute;
+        top: 20px;
+        background-color: $category;
+        height: 200px;
+        width: 100px;
+        text-align: center;
+        z-index: 2;
+        @include font(400, 23px,19px);
+    }
 }
+
 .pages
 {
     margin: 48px auto 98px auto;

@@ -75,7 +75,7 @@ header {
 }
 
 .subscribe__img:hover img {
-  display: none;
+  filter: blur(4px);
 }
 
 .subscribe__img img {
